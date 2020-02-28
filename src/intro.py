@@ -10,3 +10,7 @@ print (f'Hello {name}')
 li = [12, 5, 65, 15]
 li.append(11)
 print(li) 
+
+#Loop
+for number in li:
+    print(number)
