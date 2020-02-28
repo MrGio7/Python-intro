@@ -2,14 +2,14 @@ print ("Hello World")
 
 # Declaring Variables
 name = "Gio"
-print (name)
-print ("Hello " + name)
-print (f'Hello {name}')
+#print (name)
+#print ("Hello " + name)
+#print (f'Hello {name}')
 
 #Working with List
 li = [12, 5, 65, 15]
 li.append(11)
-print(li) 
+#print(li) 
 
 #Loop
 for number in li:
@@ -23,7 +23,7 @@ squares = [num*num for num in li]
 #for sqr in li:
 #    squares.append(sqr*sqr)
 
-print(squares)
+#print(squares)
 
 evens = [num for num in li if num % 2 == 0]
 
@@ -31,7 +31,7 @@ evens = [num for num in li if num % 2 == 0]
 #    if num % 2 == 0:
 #        evens.append(num)
 
-print(evens)
+#print(evens)
 
 #Filtering list
 
@@ -39,4 +39,18 @@ names = ["Aaran", "Aaren", "Aarez", "Aarman", "Aaron", "Aaron-James", "Aarron", 
 
 s_names = [name.capitalize() for name in names if name[0].lower() == "s"]
 
-print(s_names)
+#print(s_names)
+
+#Dictionary
+new_dict = {}
+
+car_dict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+print(car_dict["brand"])
+
+for key, value in car_dict.items():
+    print(f'{key} {value}')
